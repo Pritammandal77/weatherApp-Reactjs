@@ -1,0 +1,321 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.mainNav{
+  background-color: #0a9a00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+
+.ul{
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 10px;
+ 
+}
+
+.ul li{
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+li:hover{
+  color: #d9ff1d;
+}
+
+.form-check{
+  font-size: 25px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  justify-content: space-between;
+}
+
+#flexSwitchCheckDefault{
+  cursor: pointer;
+}
+
+.text{
+  height: 30px;
+  width: 250px;
+  color: #000000;
+  background-color: #56ff6c;
+  border:none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding-left: 20px;
+  
+}
+
+.text::placeholder {
+  color: #ffffff;
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  font-family: Ubuntu;
+}
+
+#search{
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search:hover{
+  color: yellow;
+}
+
+
+.mainBody{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+} 
+
+.body1{
+  background-color: #a4ff42;
+  width:40vw;
+  border-radius: 25px;
+  height: 400px;
+}
+
+.body1:hover {
+  transform: scale(1.03);
+  box-shadow:
+    -10px -10px 15px rgba(68, 104, 235, 0.2),
+    10px 10px 15px rgba(68, 105, 241, 0.2);
+}
+
+ img{
+  height: 120px;
+  width: 120px;
+
+}
+
+.img{
+  border: none;
+  margin-bottom: 180px;
+} 
+
+
+.head{
+  margin: 50px 50px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 160px;
+  font-size: 200px;
+}
+
+.temp{
+  font-size: 100px;
+}
+
+.condition{
+  font-size: 25px;
+  position:relative;
+  top: 80px;
+  right: 30px;
+  
+}
+
+.main{
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  font-size: 100px;
+  position: relative;
+  
+}
+
+.city{
+  font-size: 75px;
+ 
+}
+.country{
+  font-size: 30px;
+  margin-left: 200px;
+  position: relative;
+  left: 70px;
+  bottom: 20px;
+}
+
+.body2{
+  width: 40vw;
+}
+
+
+.body2{
+  height: 450px;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+.body2 > *{
+  height: 150px;
+  width: 160px;
+  background-color: #a4ff42;
+  border-radius: 15px;
+  padding: 5px 0px 0px 10px;
+  font-weight: 500;
+  font-size: 20px;
+    
+}
+
+.data{
+  background-color: #cdff97;
+  height: 80px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 10px;
+   padding: 20px 0px 0px 10px; 
+  font-size: 20px;
+  
+}
+
+.body2 > *:hover{
+  transform: scale(1.03);
+  box-shadow:
+    -10px -10px 15px rgba(68, 104, 235, 0.2),
+    10px 10px 15px rgba(68, 105, 241, 0.2);
+}
+
+
+@media  screen and (max-width: 450px){
+  .nav{
+    display: none;
+   
+  }
+
+  .form-check{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .search{
+   display: flex;
+   width: 250px;
+  }
+
+  .form-check-label{
+    font-size: 20px;
+  }
+
+  .mode{
+    width:150;
+   position: relative;
+   right: 100px;
+   margin-left: 130px;
+   font-weight: 500;
+  }
+
+  #search{
+     position: relative;
+     right: 30px;
+     top: 4px;
+  }
+
+  .text{
+    width: 200px;
+    position: relative;
+    right: 30px;
+  }
+
+  .mainBody{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+
+  .body1{
+    height: 350px;
+    width: 75vw;
+    
+  }
+
+  .body2{
+     grid-template-columns:repeat(2, 1fr);
+     grid-template-rows: repeat(2,1fr);
+     margin-top: 50px;
+  }
+
+
+  .head{
+    height: 100px;
+    font-size: 20px;
+  }
+
+  img{
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+  }
+  .main{
+    height: 200px;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .country{
+    font-size: 15px;
+    margin-right: 150px;
+  }
+  .temp{
+    font-size: 49px;
+  }
+  .condition{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 80px;
+  }
+ .city{
+  font-size: 49px;
+ }
+ .country{
+  font-size: 20px;
+ }
+  .body2 > *{
+    height: 170px;
+    width: 35vw;
+  }
+
+  .data{
+    height: 90px;
+    width: 25vw;
+  }
+
+} 
+
+
+
